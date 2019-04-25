@@ -23,13 +23,12 @@ int main(int argc,char** argv) {
 		if(parser.Parse()) {
 			if(DEBUG)
 				std::printf("Parser completed execution\n");
-			parser.Print(argv[1]);
+			//parser.Print(argv[1]);
 		} else {
 			if(DEBUG)
 				std::printf("Parsing could not complete\n");
 		}
 
-		//statSem.Traverse(parser.root, "x1");
 		statSem.doStatSem(parser.root);
 
 		std::fclose(file);	
@@ -39,13 +38,12 @@ int main(int argc,char** argv) {
 		if(parser.Parse()){
 			if(DEBUG)
 				std::printf("Parser completed execution\n");
-				parser.Print("out");
+				//parser.Print("out");
 		}
 		else {
 			if(DEBUG)
 				std::printf("Parser could not complete\n");
 		}
-		//statSem.Traverse(parser.root, "x1");
 		statSem.doStatSem(parser.root);
 	}
 

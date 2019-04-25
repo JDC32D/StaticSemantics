@@ -1,0 +1,7 @@
+var x1 : 1
+var x2 : 2
+void
+	var x3 : 3
+	scan x1 ;
+	print x4 ; & var x4 undefined
+return

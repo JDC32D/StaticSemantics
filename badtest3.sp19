@@ -1,0 +1,5 @@
+var x1 : 1
+var x2 : 2
+void
+	print x3 ; & var x3 undefined
+return
